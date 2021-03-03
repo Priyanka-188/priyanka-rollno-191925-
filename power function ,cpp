@@ -1,0 +1,29 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+double power(double,int);
+void display(double,int);
+
+int main()
+{
+    double m;
+    int n=2;
+    cout<<"Enter value of m ";
+    cin>>m;
+
+    display(m,n);
+
+    return 0;
+}
+double power(double x, int y)
+{
+    double result=pow(x,y);
+    return result;
+}
+void display(double x,int y)
+{
+    cout<<"result of "<<x<<" ^ "<<y<<" is "<<power(x,y);
+    cout<<endl;
+}
